@@ -1,12 +1,13 @@
-# React + Vite
+Convertisseur de Devise
+Un convertisseur de devises moderne et rapide, développé avec les frameWork React.js . Ce projet permet aux utilisateurs de convertir différentes devises en temps réel en utilisant une API de taux de change.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Fonctionnalités
+✅ Conversion instantanée entre plusieurs devises 📊
 
-Currently, two official plugins are available:
+✅ Interface simple et intuitive 💡
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Données mises à jour grâce à une API de taux de change 🌍
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Projet Réaliser par le groupe 6 : 
+TEKEU Darian-Blair
+TEGANTCHOUANG Mérovée Joseph
