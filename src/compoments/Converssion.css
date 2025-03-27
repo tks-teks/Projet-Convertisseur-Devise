@@ -1,0 +1,226 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1877e4b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.converter-wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.app-container {
+    background: linear-gradient(135deg, #ffffff, #e6e9ff);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: popIn 0.5s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.app-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3051a3;
+    background: #ff8c00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sections de saisie */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.amount-container {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 90px;
+    font-size: 18px;
+    border: 2px solid #3051a3;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    background: white;
+    color: #000000;
+}
+
+.amount-input:hover, .amount-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(48, 81, 163, 0.3);
+}
+
+/* Sélection des devises */
+.currencies-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency-wrapper {
+    flex: 1;
+    color: black;
+    text-align: center;
+}
+
+.currency-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.currency-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3051a3;
+    border-radius: 8px;
+    color: black;
+    background: linear-gradient(135deg, #ffffff, #d1d8ff);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.currency-select:hover, .currency-select:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(48, 81, 163, 0.3);
+}
+
+.currency-select:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+/* Bouton d'échange */
+.swap-button {
+    background: #3051a3;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    margin: 0 10px;
+    box-shadow: 0px 4px 8px rgba(48, 81, 163, 0.3);
+}
+
+.swap-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(255, 140, 0, 0.5);
+}
+
+.swap-button.rotate {
+    animation: rotateSwap 0.3s ease-in-out;
+}
+
+.exchange-rate{
+    color: #000000;
+    font-weight: bold;
+}
+
+@keyframes rotateSwap {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+/* Bouton de conversion */
+.convert-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #3051a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(48, 81, 163, 0.3);
+}
+
+.convert-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 140, 0, 0.5);
+}
+
+.convert-btn.pulse {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Résultats */
+.result {
+    background: linear-gradient(135deg, #eaf0ff, #ffffff);
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInResult 0.5s ease-in-out forwards;
+    border: 1px solid rgba(48, 81, 163, 0.3);
+}
+
+@keyframes fadeInResult {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.conversion-result {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3051a3;
+}
+
+/* Pied de page */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}

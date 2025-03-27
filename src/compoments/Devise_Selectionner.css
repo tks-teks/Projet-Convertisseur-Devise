@@ -1,0 +1,32 @@
+.currency-select-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .currency-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .currency-select {
+    padding: 0.8rem 1rem;
+    border: 2px solid rgba(106, 137, 204, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234a69bd' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    background-size: 12px;
+    padding-right: 35px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .currency-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
+  }
